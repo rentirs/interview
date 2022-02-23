@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Z:/Программирование/Java/Факультет Java разработки/3 четверть/Разработка интернет-магазина на Spring Framework/Примеры по Spring/Пример создания магазина/buysell/src/main/java</OriginalElement>
+  <nodes>
+    <node x="93.59751773049652" y="1309.0">com.example.buysell.controllers.ProductController</node>
+    <node x="527.1731678486999" y="992.0">com.example.buysell.repositories.UserRepository</node>
+    <node x="1141.5357565011823" y="447.5">com.example.buysell.repositories.ImageRepository</node>
+    <node x="421.4107565011822" y="1137.0">com.example.buysell.services.CustomUserDetailsService</node>
+    <node x="416.4107565011822" y="1309.0">com.example.buysell.configurations.SecurityConfig</node>
+    <node x="123.82742316784879" y="684.0">com.example.buysell.models.Product</node>
+    <node x="214.45242316784885" y="324.0">com.example.buysell.models.User</node>
+    <node x="1133.1607565011823" y="772.0">com.example.buysell.controllers.ImageController</node>
+    <node x="819.1607565011823" y="1115.0">com.example.buysell.services.UserService</node>
+    <node x="88.41075650118228" y="1115.0">com.example.buysell.services.ProductService</node>
+    <node x="756.1607565011823" y="1309.0">com.example.buysell.controllers.UserController</node>
+    <node x="0.0" y="1432.0">com.example.buysell.BuysellApplication</node>
+    <node x="739.7857565011823" y="66.0">com.example.buysell.models.enums.Role</node>
+    <node x="284.46483451536653" y="992.0">com.example.buysell.repositories.ProductRepository</node>
+    <node x="975.7101063829788" y="1309.0">com.example.buysell.controllers.AdminController</node>
+    <node x="30.785756501182277" y="0.0">com.example.buysell.models.Image</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.buysell.services.UserService" target="com.example.buysell.repositories.UserRepository" relationship="DEPENDENCY">
+      <point x="73.25" y="-61.0" />
+      <point x="1038.9107565011823" y="1053.0" />
+      <point x="559.4725177304965" y="1053.0" />
+      <point x="559.4725177304965" y="1043.0" />
+      <point x="564.6731678486999" y="1043.0" />
+      <point x="-37.5" y="14.5" />
+    </edge>
+    <edge source="com.example.buysell.models.User" target="com.example.buysell.models.enums.Role" relationship="DEPENDENCY">
+      <point x="51.75" y="-138.0" />
+      <point x="369.7024231678488" y="293.0" />
+      <point x="1349.1607565011823" y="293.0" />
+      <point x="1349.1607565011823" y="283.0" />
+      <point x="1386.7225177304965" y="283.0" />
+      <point x="1386.7225177304965" y="253.0" />
+      <point x="832.7857565011823" y="253.0" />
+      <point x="31.0" y="50.0" />
+    </edge>
+    <edge source="com.example.buysell.controllers.AdminController" target="com.example.buysell.services.UserService" relationship="DEPENDENCY">
+      <point x="51.25" y="-39.0" />
+      <point x="1129.4601063829787" y="1288.0" />
+      <point x="1090.4725177304965" y="1288.0" />
+      <point x="1090.4725177304965" y="1268.0" />
+      <point x="960.6607565011823" y="1268.0" />
+      <point x="960.6607565011823" y="1258.0" />
+      <point x="892.4107565011823" y="1258.0" />
+      <point x="-73.25" y="61.0" />
+    </edge>
+    <edge source="com.example.buysell.models.Product" target="com.example.buysell.models.Image" relationship="TO_MANY">
+      <point x="-51.75" y="-127.0" />
+      <point x="175.5774231678488" y="662.0" />
+      <point x="222.32742316784885" y="662.0" />
+      <point x="222.32742316784885" y="622.0" />
+      <point x="119.28575650118228" y="622.0" />
+      <point x="0.0" y="116.0" />
+    </edge>
+    <edge source="com.example.buysell.controllers.ProductController" target="com.example.buysell.services.ProductService" relationship="DEPENDENCY">
+      <point x="-56.75" y="-39.0" />
+      <point x="150.34751773049652" y="1288.0" />
+      <point x="202.09751773049646" y="1288.0" />
+      <point x="202.09751773049646" y="1278.0" />
+      <point x="166.66075650118228" y="1278.0" />
+      <point x="-78.25" y="61.0" />
+    </edge>
+    <edge source="com.example.buysell.models.Image" target="com.example.buysell.models.Product" relationship="TO_ONE">
+      <point x="0.0" y="116.0" />
+      <point x="119.28575650118228" y="622.0" />
+      <point x="222.32742316784885" y="622.0" />
+      <point x="222.32742316784885" y="662.0" />
+      <point x="175.5774231678488" y="662.0" />
+      <point x="-51.75" y="-127.0" />
+    </edge>
+    <edge source="com.example.buysell.models.User" target="com.example.buysell.models.Product" relationship="DEPENDENCY">
+      <point x="69.0" y="138.0" />
+      <point x="386.95242316784885" y="642.0" />
+      <point x="737.5357565011823" y="642.0" />
+      <point x="737.5357565011823" y="652.0" />
+      <point x="232.82742316784885" y="652.0" />
+      <point x="232.82742316784885" y="662.0" />
+      <point x="279.0774231678488" y="662.0" />
+      <point x="51.75" y="-127.0" />
+    </edge>
+    <edge source="com.example.buysell.models.Product" target="com.example.buysell.models.User" relationship="DEPENDENCY">
+      <point x="51.75" y="-127.0" />
+      <point x="279.0774231678488" y="662.0" />
+      <point x="232.82742316784885" y="662.0" />
+      <point x="232.82742316784885" y="652.0" />
+      <point x="737.5357565011823" y="652.0" />
+      <point x="737.5357565011823" y="642.0" />
+      <point x="386.95242316784885" y="642.0" />
+      <point x="69.0" y="138.0" />
+    </edge>
+    <edge source="com.example.buysell.controllers.UserController" target="com.example.buysell.services.UserService" relationship="TO_ONE">
+      <point x="48.25" y="-39.0" />
+      <point x="900.9107565011823" y="1288.0" />
+      <point x="970.6607565011823" y="1288.0" />
+      <point x="970.6607565011823" y="1258.0" />
+      <point x="1038.9107565011823" y="1258.0" />
+      <point x="73.25" y="61.0" />
+    </edge>
+    <edge source="com.example.buysell.models.Image" target="com.example.buysell.models.Product" relationship="DEPENDENCY">
+      <point x="59.0" y="116.0" />
+      <point x="178.28575650118228" y="263.0" />
+      <point x="1228.1731678487" y="263.0" />
+      <point x="1228.1731678487" y="303.0" />
+      <point x="130.28575650118228" y="303.0" />
+      <point x="130.28575650118228" y="632.0" />
+      <point x="232.82742316784885" y="632.0" />
+      <point x="232.82742316784885" y="662.0" />
+      <point x="279.0774231678488" y="662.0" />
+      <point x="51.75" y="-127.0" />
+    </edge>
+    <edge source="com.example.buysell.models.Product" target="com.example.buysell.models.Image" relationship="DEPENDENCY">
+      <point x="51.75" y="-127.0" />
+      <point x="279.0774231678488" y="662.0" />
+      <point x="232.82742316784885" y="662.0" />
+      <point x="232.82742316784885" y="632.0" />
+      <point x="130.28575650118228" y="632.0" />
+      <point x="130.28575650118228" y="303.0" />
+      <point x="1228.1731678487" y="303.0" />
+      <point x="1228.1731678487" y="263.0" />
+      <point x="178.28575650118228" y="263.0" />
+      <point x="59.0" y="116.0" />
+    </edge>
+    <edge source="com.example.buysell.services.ProductService" target="com.example.buysell.repositories.ProductRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-61.0" />
+      <point x="244.91075650118228" y="1093.0" />
+      <point x="285.7101063829788" y="1093.0" />
+      <point x="285.7101063829788" y="1053.0" />
+      <point x="327.46483451536653" y="1053.0" />
+      <point x="-43.0" y="14.5" />
+    </edge>
+    <edge source="com.example.buysell.controllers.UserController" target="com.example.buysell.services.UserService" relationship="DEPENDENCY">
+      <point x="-48.25" y="-39.0" />
+      <point x="804.4107565011823" y="1288.0" />
+      <point x="817.4725177304965" y="1288.0" />
+      <point x="817.4725177304965" y="1278.0" />
+      <point x="960.6607565011823" y="1278.0" />
+      <point x="960.6607565011823" y="1258.0" />
+      <point x="892.4107565011823" y="1258.0" />
+      <point x="-73.25" y="61.0" />
+    </edge>
+    <edge source="com.example.buysell.repositories.ImageRepository" target="com.example.buysell.models.Image" relationship="DEPENDENCY">
+      <point x="0.0" y="-14.5" />
+      <point x="1223.0357565011823" y="303.0" />
+      <point x="1228.1731678487" y="303.0" />
+      <point x="1228.1731678487" y="263.0" />
+      <point x="178.28575650118228" y="263.0" />
+      <point x="59.0" y="116.0" />
+    </edge>
+    <edge source="com.example.buysell.services.ProductService" target="com.example.buysell.repositories.ProductRepository" relationship="TO_ONE">
+      <point x="104.33333333333331" y="-61.0" />
+      <point x="349.2440898345156" y="1093.0" />
+      <point x="375.54994089834526" y="1093.0" />
+      <point x="375.54994089834526" y="1053.0" />
+      <point x="413.46483451536653" y="1053.0" />
+      <point x="43.0" y="14.5" />
+    </edge>
+    <edge source="com.example.buysell.services.CustomUserDetailsService" target="com.example.buysell.repositories.UserRepository" relationship="DEPENDENCY">
+      <point x="-68.25" y="-39.0" />
+      <point x="489.6607565011822" y="1073.0" />
+      <point x="559.4725177304965" y="1073.0" />
+      <point x="559.4725177304965" y="1043.0" />
+      <point x="564.6731678486999" y="1043.0" />
+      <point x="-37.5" y="14.5" />
+    </edge>
+    <edge source="com.example.buysell.services.CustomUserDetailsService" target="com.example.buysell.repositories.UserRepository" relationship="TO_ONE">
+      <point x="68.25" y="-39.0" />
+      <point x="626.1607565011823" y="1073.0" />
+      <point x="617.2225177304965" y="1073.0" />
+      <point x="617.2225177304965" y="1043.0" />
+      <point x="639.6731678486999" y="1043.0" />
+      <point x="37.5" y="14.5" />
+    </edge>
+    <edge source="com.example.buysell.services.ProductService" target="com.example.buysell.models.Product" relationship="DEPENDENCY">
+      <point x="0.0" y="-61.0" />
+      <point x="244.91075650118228" y="1093.0" />
+      <point x="285.7101063829788" y="1093.0" />
+      <point x="285.7101063829788" y="1053.0" />
+      <point x="202.21010638297878" y="1053.0" />
+      <point x="202.21010638297878" y="965.0" />
+      <point x="227.3274231678488" y="965.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="com.example.buysell.services.ProductService" target="com.example.buysell.models.Image" relationship="CREATE">
+      <point x="-104.33333333333331" y="-61.0" />
+      <point x="140.57742316784902" y="1093.0" />
+      <point x="0.0" y="1093.0" />
+      <point x="0.0" y="303.0" />
+      <point x="60.28575650118228" y="303.0" />
+      <point x="-59.0" y="116.0" />
+    </edge>
+    <edge source="com.example.buysell.models.User" target="com.example.buysell.models.Image" relationship="DEPENDENCY">
+      <point x="51.75" y="-138.0" />
+      <point x="369.7024231678488" y="293.0" />
+      <point x="1349.1607565011823" y="293.0" />
+      <point x="1349.1607565011823" y="273.0" />
+      <point x="1228.1731678487" y="273.0" />
+      <point x="1228.1731678487" y="263.0" />
+      <point x="178.28575650118228" y="263.0" />
+      <point x="59.0" y="116.0" />
+    </edge>
+    <edge source="com.example.buysell.controllers.ImageController" target="com.example.buysell.models.Image" relationship="DEPENDENCY">
+      <point x="57.75" y="-39.0" />
+      <point x="1306.4107565011823" y="662.0" />
+      <point x="1253.6607565011823" y="662.0" />
+      <point x="1253.6607565011823" y="652.0" />
+      <point x="1315.0357565011823" y="652.0" />
+      <point x="1315.0357565011823" y="303.0" />
+      <point x="1228.1731678487" y="303.0" />
+      <point x="1228.1731678487" y="263.0" />
+      <point x="178.28575650118228" y="263.0" />
+      <point x="59.0" y="116.0" />
+    </edge>
+    <edge source="com.example.buysell.services.UserService" target="com.example.buysell.models.enums.Role" relationship="DEPENDENCY">
+      <point x="73.25" y="-61.0" />
+      <point x="1038.9107565011823" y="1093.0" />
+      <point x="1404.625" y="1093.0" />
+      <point x="1404.625" y="273.0" />
+      <point x="1386.7225177304965" y="273.0" />
+      <point x="1386.7225177304965" y="253.0" />
+      <point x="832.7857565011823" y="253.0" />
+      <point x="31.0" y="50.0" />
+    </edge>
+    <edge source="com.example.buysell.services.ProductService" target="com.example.buysell.repositories.UserRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-61.0" />
+      <point x="244.91075650118228" y="1093.0" />
+      <point x="285.7101063829788" y="1093.0" />
+      <point x="285.7101063829788" y="1063.0" />
+      <point x="559.4725177304965" y="1063.0" />
+      <point x="559.4725177304965" y="1043.0" />
+      <point x="564.6731678486999" y="1043.0" />
+      <point x="-37.5" y="14.5" />
+    </edge>
+    <edge source="com.example.buysell.controllers.AdminController" target="com.example.buysell.models.User" relationship="DEPENDENCY">
+      <point x="51.25" y="-39.0" />
+      <point x="1129.4601063829787" y="1288.0" />
+      <point x="1090.4725177304965" y="1288.0" />
+      <point x="1090.4725177304965" y="1278.0" />
+      <point x="1122.6607565011823" y="1278.0" />
+      <point x="1122.6607565011823" y="662.0" />
+      <point x="737.5357565011823" y="662.0" />
+      <point x="737.5357565011823" y="642.0" />
+      <point x="386.95242316784885" y="642.0" />
+      <point x="69.0" y="138.0" />
+    </edge>
+    <edge source="com.example.buysell.controllers.ProductController" target="com.example.buysell.models.Product" relationship="DEPENDENCY">
+      <point x="-56.75" y="-39.0" />
+      <point x="150.34751773049652" y="1288.0" />
+      <point x="202.09751773049646" y="1288.0" />
+      <point x="202.09751773049646" y="1278.0" />
+      <point x="77.91075650118228" y="1278.0" />
+      <point x="77.91075650118228" y="965.0" />
+      <point x="227.3274231678488" y="965.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="com.example.buysell.controllers.ImageController" target="com.example.buysell.repositories.ImageRepository" relationship="TO_ONE">
+      <point x="-57.75" y="-39.0" />
+      <point x="1190.9107565011823" y="662.0" />
+      <point x="1182.2857565011823" y="662.0" />
+      <point x="-40.75" y="14.5" />
+    </edge>
+    <edge source="com.example.buysell.repositories.ProductRepository" target="com.example.buysell.models.Product" relationship="DEPENDENCY">
+      <point x="0.0" y="-14.5" />
+      <point x="370.46483451536653" y="965.0" />
+      <point x="227.3274231678488" y="965.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="com.example.buysell.models.Product" target="com.example.buysell.models.User" relationship="TO_ONE">
+      <point x="-51.75" y="-127.0" />
+      <point x="175.5774231678488" y="662.0" />
+      <point x="222.32742316784885" y="662.0" />
+      <point x="222.32742316784885" y="622.0" />
+      <point x="317.95242316784885" y="622.0" />
+      <point x="0.0" y="138.0" />
+    </edge>
+    <edge source="com.example.buysell.controllers.ImageController" target="com.example.buysell.repositories.ImageRepository" relationship="DEPENDENCY">
+      <point x="57.75" y="-39.0" />
+      <point x="1306.4107565011823" y="662.0" />
+      <point x="1253.6607565011823" y="662.0" />
+      <point x="1253.6607565011823" y="652.0" />
+      <point x="1263.7857565011823" y="652.0" />
+      <point x="40.75" y="14.5" />
+    </edge>
+    <edge source="com.example.buysell.repositories.UserRepository" target="com.example.buysell.models.User" relationship="DEPENDENCY">
+      <point x="0.0" y="-14.5" />
+      <point x="602.1731678486999" y="662.0" />
+      <point x="737.5357565011823" y="662.0" />
+      <point x="737.5357565011823" y="642.0" />
+      <point x="386.95242316784885" y="642.0" />
+      <point x="69.0" y="138.0" />
+    </edge>
+    <edge source="com.example.buysell.controllers.UserController" target="com.example.buysell.models.User" relationship="DEPENDENCY">
+      <point x="-48.25" y="-39.0" />
+      <point x="804.4107565011823" y="1288.0" />
+      <point x="817.4725177304965" y="1288.0" />
+      <point x="817.4725177304965" y="1268.0" />
+      <point x="737.5357565011823" y="1268.0" />
+      <point x="737.5357565011823" y="642.0" />
+      <point x="386.95242316784885" y="642.0" />
+      <point x="69.0" y="138.0" />
+    </edge>
+    <edge source="com.example.buysell.controllers.AdminController" target="com.example.buysell.services.UserService" relationship="TO_ONE">
+      <point x="-51.25" y="-39.0" />
+      <point x="1026.9601063829787" y="1288.0" />
+      <point x="970.6607565011823" y="1288.0" />
+      <point x="970.6607565011823" y="1258.0" />
+      <point x="1038.9107565011823" y="1258.0" />
+      <point x="73.25" y="61.0" />
+    </edge>
+    <edge source="com.example.buysell.services.UserService" target="com.example.buysell.repositories.UserRepository" relationship="TO_ONE">
+      <point x="-73.25" y="-61.0" />
+      <point x="892.4107565011823" y="1073.0" />
+      <point x="617.2225177304965" y="1073.0" />
+      <point x="617.2225177304965" y="1043.0" />
+      <point x="639.6731678486999" y="1043.0" />
+      <point x="37.5" y="14.5" />
+    </edge>
+    <edge source="com.example.buysell.models.User" target="com.example.buysell.models.Product" relationship="TO_MANY">
+      <point x="0.0" y="138.0" />
+      <point x="317.95242316784885" y="622.0" />
+      <point x="222.32742316784885" y="622.0" />
+      <point x="222.32742316784885" y="662.0" />
+      <point x="175.5774231678488" y="662.0" />
+      <point x="-51.75" y="-127.0" />
+    </edge>
+    <edge source="com.example.buysell.services.ProductService" target="com.example.buysell.repositories.UserRepository" relationship="TO_ONE">
+      <point x="104.33333333333331" y="-61.0" />
+      <point x="349.2440898345156" y="1093.0" />
+      <point x="375.54994089834526" y="1093.0" />
+      <point x="375.54994089834526" y="1083.0" />
+      <point x="617.2225177304965" y="1083.0" />
+      <point x="617.2225177304965" y="1043.0" />
+      <point x="639.6731678486999" y="1043.0" />
+      <point x="37.5" y="14.5" />
+    </edge>
+    <edge source="com.example.buysell.services.UserService" target="com.example.buysell.models.User" relationship="DEPENDENCY">
+      <point x="73.25" y="-61.0" />
+      <point x="1038.9107565011823" y="662.0" />
+      <point x="737.5357565011823" y="662.0" />
+      <point x="737.5357565011823" y="642.0" />
+      <point x="386.95242316784885" y="642.0" />
+      <point x="69.0" y="138.0" />
+    </edge>
+    <edge source="com.example.buysell.models.User" target="com.example.buysell.models.enums.Role" relationship="TO_MANY">
+      <point x="-51.75" y="-138.0" />
+      <point x="266.20242316784885" y="283.0" />
+      <point x="770.7857565011823" y="283.0" />
+      <point x="-31.0" y="50.0" />
+    </edge>
+    <edge source="com.example.buysell.controllers.ProductController" target="com.example.buysell.services.ProductService" relationship="TO_ONE">
+      <point x="56.75" y="-39.0" />
+      <point x="263.8475177304965" y="1288.0" />
+      <point x="323.1607565011823" y="1288.0" />
+      <point x="78.25" y="61.0" />
+    </edge>
+    <edge source="com.example.buysell.configurations.SecurityConfig" target="com.example.buysell.services.CustomUserDetailsService" relationship="DEPENDENCY">
+      <point x="70.75" y="-39.0" />
+      <point x="628.6607565011823" y="1288.0" />
+      <point x="626.1607565011823" y="1288.0" />
+      <point x="68.25" y="39.0" />
+    </edge>
+    <edge source="com.example.buysell.controllers.AdminController" target="com.example.buysell.models.enums.Role" relationship="DEPENDENCY">
+      <point x="51.25" y="-39.0" />
+      <point x="1129.4601063829787" y="1288.0" />
+      <point x="1090.4725177304965" y="1288.0" />
+      <point x="1090.4725177304965" y="1278.0" />
+      <point x="1404.625" y="1278.0" />
+      <point x="1404.625" y="273.0" />
+      <point x="1386.7225177304965" y="273.0" />
+      <point x="1386.7225177304965" y="253.0" />
+      <point x="832.7857565011823" y="253.0" />
+      <point x="31.0" y="50.0" />
+    </edge>
+    <edge source="com.example.buysell.configurations.SecurityConfig" target="com.example.buysell.services.CustomUserDetailsService" relationship="TO_ONE">
+      <point x="-70.75" y="-39.0" />
+      <point x="487.1607565011822" y="1288.0" />
+      <point x="489.6607565011822" y="1288.0" />
+      <point x="-68.25" y="39.0" />
+    </edge>
+    <edge source="com.example.buysell.models.User" target="com.example.buysell.models.Image" relationship="TO_ONE">
+      <point x="-51.75" y="-138.0" />
+      <point x="266.20242316784885" y="273.0" />
+      <point x="119.28575650118228" y="273.0" />
+      <point x="0.0" y="116.0" />
+    </edge>
+    <edge source="com.example.buysell.services.ProductService" target="com.example.buysell.models.User" relationship="CREATE">
+      <point x="-104.33333333333331" y="-61.0" />
+      <point x="140.57742316784902" y="1093.0" />
+      <point x="0.0" y="1093.0" />
+      <point x="0.0" y="1083.0" />
+      <point x="56.21010638297878" y="1083.0" />
+      <point x="56.21010638297878" y="642.0" />
+      <point x="248.95242316784885" y="642.0" />
+      <point x="-69.0" y="138.0" />
+    </edge>
+    <edge source="com.example.buysell.models.User" target="com.example.buysell.models.enums.Role" relationship="TO_ONE">
+      <point x="-51.75" y="-138.0" />
+      <point x="266.20242316784885" y="283.0" />
+      <point x="770.7857565011823" y="283.0" />
+      <point x="-31.0" y="50.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.5670650730411687" showDependencies="true" x="702.5" y="742.9999999999999" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
