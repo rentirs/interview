@@ -12,6 +12,10 @@ public class Main {
             System.out.println(product);
             product.setName("NewMilkName");
             System.out.println(product);
+
+            EditProductPrice editProductPrice = new EditProductPrice(product);
+            editProductPrice.doublePrice();
+            System.out.println(product);
         }
     }
 

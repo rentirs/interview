@@ -5,6 +5,10 @@ public class Product implements ThingForSale {
     public String name;
     public String category;
 
+    public double fullCosts;
+    public double profit;
+    public double count;
+
     @Override
     public void setPrice(double price){
         this.price = price;
@@ -27,8 +31,16 @@ public class Product implements ThingForSale {
                 '}';
     }
 
+    public double getOptimalPriceForProduct() {
+        return (fullCosts + profit) / count;
+    }
+
     public double getPrice() {
         return price;
+    }
+
+    public double getDoublePrice() {
+        return price * 2;
     }
 
 }
